@@ -881,7 +881,7 @@ footer{
 
 @media (max-width: 768px){
     .header-container{
-        padding: 0 16px;
+        justify-content: center;
     }
     .nav-logo{
         font-size: 15px;
@@ -959,6 +959,10 @@ footer{
         margin-bottom: 30px;
     }
 
+    .footer-brand{
+        text-align: center;
+    }
+
     .footer-brand p{
         font-size: 0.875rem;
     }
@@ -966,6 +970,19 @@ footer{
     .footer-info-group{
         flex-direction: column;
         gap: 30px;
+    }
+
+    .footer-logo{
+        justify-content: center;
+    }
+
+    .footer-contacts ul, .footer-hours ul{
+        align-items: center;
+    }
+
+    .footer-contacts li, .footer-hours li{
+        justify-content: center;
+        text-align: center;
     }
 
     .cards-grid{
