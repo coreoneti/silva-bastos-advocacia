@@ -881,10 +881,15 @@ footer{
 
 @media (max-width: 768px){
     .header-container{
+        display: flex;
         justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding: 0 16px;
     }
     .nav-logo{
         font-size: 15px;
+        margin: 0 auto;
     }
 
     .span-logo{
@@ -955,11 +960,18 @@ footer{
     }
 
     .footer-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         gap: 30px;
-        margin-bottom: 30px;
     }
 
-    .footer-brand{
+    .footer-brand, .footer-contacts, .footer-hours, .footer-info-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
         text-align: center;
     }
 
@@ -967,22 +979,27 @@ footer{
         font-size: 0.875rem;
     }
 
-    .footer-info-group{
-        flex-direction: column;
-        gap: 30px;
-    }
-
     .footer-logo{
         justify-content: center;
     }
 
+    .footer-contacts h3, .footer-hours h3 {
+        text-align: center !important;
+        width: 100%;
+    }
+
     .footer-contacts ul, .footer-hours ul{
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        padding: 0;
+        width: 100%;
     }
 
     .footer-contacts li, .footer-hours li{
         justify-content: center;
         text-align: center;
+        width: 100%;
     }
 
     .cards-grid{
