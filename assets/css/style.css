@@ -524,6 +524,7 @@ header{
 .section3 h2{
     color: #0E1C36;
     margin-bottom: 50px;
+    max-width: 500px;
 }
 
 .diferenciais-grid{
