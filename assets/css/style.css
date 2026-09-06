@@ -20,6 +20,118 @@ body{
     background-color: #FFFFFF;
 }
 
+h1{
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 22px;
+}
+
+h2{
+    color: #000000;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.25;
+    max-width: 580px;
+    margin-bottom: 54px;
+}
+
+.tagline{
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #E6D3A0;
+    margin-bottom: 16px;
+}
+
+/* 
+================================
+            COMPONENTS
+================================
+*/
+
+.btn-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D2AC54;
+    color: #000000;
+    font-family: 'Manrope';
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 32px;
+    height: 44px;
+    width: 168px;
+}
+
+.btn-header:hover{
+    background-color: #C89217;
+}
+
+.btn-primary{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D1AC54;
+    color: #000000;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 14px 24px;
+    border-radius: 32px;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.btn-primary img{
+    width: 20px;
+    height: 20px;
+}
+
+.btn-primary:hover{
+    background-color: #C89217;
+}
+
+.btn-secondary{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 13px 24px;
+    border: 1px solid #F8FAFE;
+    border-radius: 32px;
+    text-decoration: none;
+}
+
+.btn-secondary .icon-seta {
+    width: 16px;
+    height: 16px;
+    background-color: #FFFFFF;
+    -webkit-mask: url("/assets/images/icons/icon-seta.svg") no-repeat center / contain;
+    mask: url("/assets/images/icons/icon-seta.svg") no-repeat center / contain
+}
+
+.btn-secondary:hover{
+    color: #D2AC54;
+    border: 1px solid #D2AC54;
+}
+
+.btn-secondary:hover .icon-seta {
+    background-color: #D2AC54;
+}
+
+/* 
+================================
+            HEADER
+================================
+*/
+
 header{
     display: flex;
     align-items: center;
@@ -43,9 +155,31 @@ header{
 }
 
 .header-container nav a {
+    display: inline-block;
     text-decoration: none;
     color: #616978;
     font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.header-container nav a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #D1AC54;
+}
+
+.header-container nav a:hover{
+    color: #D1AC54;
+}
+
+.header-container nav a:hover::after {
+    width: 100%;
 }
 
 .nav-logo{
@@ -69,20 +203,6 @@ header{
     color: #616978;
 }
 
-.btn-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFD900;
-    color: #000000;
-    font-family: 'Manrope';
-    font-size: 14px;
-    text-decoration: none;
-    border-radius: 32px;
-    height: 44px;
-    width: 168px;
-}
-
 .tagline-hero{
     display: inline-block;
     border: 1px solid #D1AC54;
@@ -96,32 +216,11 @@ header{
     margin-bottom: 24px;
 }
 
-.tagline{
-    display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #E6D3A0;
-    margin-bottom: 16px;
-}
-
-h1{
-    font-size: 4rem;
-    font-weight: 500;
-    line-height: 1.2;
-    color: #FFFFFF;
-    margin-bottom: 22px;
-}
-
-h2{
-    color: #000000;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 1.25;
-    max-width: 580px;
-    margin-bottom: 54px;
-}
+/* 
+================================
+            HERO
+================================
+*/
 
 .hero{
     background-color: #0E1C36;
@@ -159,44 +258,7 @@ h2{
     gap: 16px;
 }
 
-.btn-primary{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #D1AC54;
-    color: #000000;
-    font-weight: 600;
-    font-size: 0.95rem;
-    padding: 14px 24px;
-    border-radius: 32px;
-    text-decoration: none;
-    gap: 10px;
-}
 
-.btn-primary img{
-    width: 20px;
-    height: 20px;
-}
-
-.btn-secondary{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background-color: transparent;
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 0.95rem;
-    padding: 13px 24px;
-    border: 1px solid #F8FAFE;
-    border-radius: 32px;
-    text-decoration: none;
-}
-
-.btn-secondary img{
-    width: 16px;
-    height: 16px;
-}
 
 .hero-image{
     flex: 1;
@@ -224,6 +286,12 @@ h2{
     border-radius: 32px;
     display: block;
 }
+
+/* 
+================================
+            SECTION 1
+================================
+*/
 
 .section1{
     padding: 100px 0;
@@ -264,6 +332,33 @@ h2{
     margin-bottom: 28px;
 }
 
+.icon-svg {
+    width: 24px;
+    height: 24px;
+    background-color: #D2AC54;
+    display: inline-block;
+}
+
+.icon-empresarial {
+    -webkit-mask: url("/assets/images/icons/icon-direitoempresarial.svg") no-repeat center / contain;
+    mask: url("/assets/images/icons/icon-direitoempresarial.svg") no-repeat center / contain;
+}
+
+.icon-trabalhista {
+    -webkit-mask: url("/assets/images/icons/icon-direitotrabalhistapatronal.svg") no-repeat center / contain;
+    mask: url("/assets/images/icons/icon-direitotrabalhistapatronal.svg") no-repeat center / contain;
+}
+
+.icon-digital {
+    -webkit-mask: url("/assets/images/icons/icon-direitodigitalelgpd.svg") no-repeat center / contain;
+    mask: url("/assets/images/icons/icon-direitodigitalelgpd.svg") no-repeat center / contain;
+}
+
+.icon-civil {
+    -webkit-mask: url("/assets/images/icons/icon-direitocivilestrategico.svg") no-repeat center / contain;
+    mask: url("/assets/images/icons/icon-direitocivilestrategico.svg") no-repeat center / contain;
+}
+
 .card h3{
     font-size: 1.25rem;
     color: #0E1C36;
@@ -277,6 +372,34 @@ h2{
     color: #616978;
     line-height: 1.6;
 }
+
+.card:hover{
+    background-color: #0E1C36;
+    border-color: #D2AC54;
+    box-shadow: 0px 4px 10px #D2AC54;
+}
+
+.card:hover .card-icon{
+    background-color: #D2AC54;
+}
+
+.card:hover .icon-svg{
+    background-color: #FFFFFF;
+}
+
+.card:hover h3{
+    color: #D2AC54;
+}
+
+.card:hover p{
+    color: #D2AC54;
+}
+
+/* 
+================================
+            SECTION 2
+================================
+*/
 
 .section2{
     background-color: #EFF2F6;
@@ -317,6 +440,7 @@ h2{
 }
 
 .stat-item{
+    border: 1px solid #E0E3E8;
     background-color: #FFFFFF;
     width: 185px;
     height: 150px;
@@ -328,6 +452,12 @@ h2{
     box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.5);
     text-align: center;
     padding: 20px;
+}
+
+.stat-item:hover{
+    background-color: #0E1C36;
+    box-shadow: 0px 4px 10px #D2AC54;
+    border: 1px solid #D2AC54;
 }
 
 .stat-item h3{
@@ -342,6 +472,16 @@ h2{
     color: #616978;
     line-height: 1.3;
 }
+
+.stat-item:hover p{
+    color: #D2AC54;
+}
+
+/* 
+================================
+            SECTION 3
+================================
+*/
 
 .section3{
     padding: 100px 0;
@@ -401,6 +541,12 @@ h2{
     color: #616978;
     line-height: 1.5;
 }
+
+/* 
+================================
+            FOOTER
+================================
+*/
 
 footer{
     background-color: #051027;
