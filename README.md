@@ -1,8 +1,4 @@
-# silva-bastos-advocacia
-Silva &amp; Bastos Advocacia - Site Institucional - PORTIFOLIO
-
-
-# Landing Page — Silva & Bastos Advogados
+#Silva & Bastos Advogados - Landing Page
 
 Landing page institucional desenvolvida para o segmento jurídico, focada em alta conversão, autoridade e design responsivo.
 
@@ -10,12 +6,12 @@ Landing page institucional desenvolvida para o segmento jurídico, focada em alt
 
 ---
 
-## Protótipo & Design
+##Protótipo & Design
 O layout foi inteiramente planejado no Figma, priorizando a hierarquia visual, tipografia e elementos de prova social para passar máxima credibilidade ao cliente final.
 
 ---
 
-## Tecnologias Utilizadas
+##Tecnologias Utilizadas
 
 * **Design:** Figma
 * **Frontend:** HTML5 & CSS3
@@ -24,7 +20,7 @@ O layout foi inteiramente planejado no Figma, priorizando a hierarquia visual, t
 
 ---
 
-## 🚀 Arquitetura e Fluxo de Trabalho
+##Arquitetura e Fluxo de Trabalho
 
 1. **Design System & UI:** Prototipagem visual no Figma.
 2. **Desenvolvimento:** Codificação da interface responsiva e otimizada.
